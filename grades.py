@@ -3,7 +3,7 @@ def classify_grade(score: int) -> str:
     if isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100:
         raise ValueError("score must be an integer from 0 through 100")
 
-    return "Pass" if score >= 60 else "Fail"
+    return "Pass" if score >= 50 else "Fail"
 
 
 if __name__ == "__main__":
